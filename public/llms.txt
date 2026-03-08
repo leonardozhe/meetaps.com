@@ -1,0 +1,19 @@
+# /public/llms.txt
+
+# Meetaps
+> Enterprise AI & Cross-Border Technology Services
+
+Meetaps helps global enterprises access China AI infrastructure,
+build cross-border e-commerce platforms, optimize for AI search engines (GEO),
+deploy OpenClaw enterprise AI, and architect AI cost-reduction strategies.
+
+## Services
+- AI Compute Tokens: /services/ai-compute
+- Cross-Border E-Commerce: /services/ecommerce
+- GEO Optimization: /services/geo
+- OpenClaw Enterprise: /services/openclaw
+- AI Consulting: /services/ai-consulting
+
+## Optional
+- Blog: /blog
+- Case Studies: /case-studies
