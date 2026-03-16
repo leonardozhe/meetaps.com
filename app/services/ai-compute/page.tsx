@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Cpu, Globe, Shield, Zap } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/Accordion';
+import ContactButton from '@/components/ui/ContactButton';
 
 const features = [
   {
@@ -67,10 +68,10 @@ export default function AIComputePage() {
                 Access China's AI compute power from anywhere in the world. Enterprise-grade GPU tokens from leading Chinese AI infrastructure providers, with global payment methods and full compliance documentation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="btn-primary">
+                <ContactButton className="btn-primary">
                   Get Started
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </ContactButton>
                 <Link href="#pricing" className="btn-secondary">
                   View Pricing
                 </Link>
@@ -146,9 +147,9 @@ export default function AIComputePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className={`w-full ${index === 1 ? 'btn-primary' : 'btn-secondary'}`}>
+                <ContactButton className={`w-full ${index === 1 ? 'btn-primary' : 'btn-secondary'}`}>
                   Contact Us
-                </Link>
+                </ContactButton>
               </div>
             ))}
           </div>
@@ -185,10 +186,10 @@ export default function AIComputePage() {
             Contact us for a consultation and we'll set up your account with the appropriate compute resources.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary">
+            <ContactButton className="btn-primary">
               Contact Us
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </ContactButton>
             <Link href="/services" className="btn-secondary bg-white/10 border-white/20 text-white hover:bg-white/20">
               View All Services
             </Link>

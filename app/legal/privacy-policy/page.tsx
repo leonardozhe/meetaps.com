@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">1. Introduction</h2>
             <p className="text-[--color-text-secondary] mb-4">
-              Meetaps Technology Ltd. ("we", "us", "our") operates the website meetaps.com (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+              Meetaps Media Chengdu Tech Ltd., Co ("we", "us", "our") operates the website meetaps.com (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
             </p>
             <p className="text-[--color-text-secondary]">
               We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.

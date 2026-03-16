@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useContactModal } from '@/lib/ContactModalContext';
 
 type ValidHref =
   | '/'
@@ -61,6 +62,7 @@ const navItems: NavItem[] = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const { openContactModal } = useContactModal();
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/50">
@@ -72,9 +74,9 @@ export default function Header() {
               <Image
                 src="/meetaps-logo.png"
                 alt="MEETAPS"
-                width={140}
-                height={40}
-                className="h-8 w-auto"
+                width={180}
+                height={52}
+                className="h-10 lg:h-12 w-auto"
                 priority
               />
             </Link>
@@ -136,12 +138,14 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link href="/contact">
-              <Button variant="primary" className="gap-2">
-                Get Started
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
+            <Button
+              variant="primary"
+              className="gap-2"
+              onClick={openContactModal}
+            >
+              Get Started
+              <ArrowRight className="w-4 h-4" />
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -188,12 +192,17 @@ export default function Header() {
                 </div>
               ))}
               <div className="pt-4 mt-2 border-t border-slate-200/50">
-                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="primary" className="w-full gap-2">
-                    Get Started
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
+                <Button
+                  variant="primary"
+                  className="w-full gap-2"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    openContactModal();
+                  }}
+                >
+                  Get Started
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
               </div>
             </nav>
           </div>

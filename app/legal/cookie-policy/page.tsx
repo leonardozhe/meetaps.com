@@ -19,7 +19,7 @@ export default function CookiePolicyPage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">Introduction</h2>
             <p className="text-[--color-text-secondary] mb-4">
-              Meetaps Technology Ltd. (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) uses cookies and similar technologies to store and manage user preferences, deliver targeted advertising, and analyze website performance.
+              Meetaps Media Chengdu Tech Ltd., Co (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) uses cookies and similar technologies to store and manage user preferences, deliver targeted advertising, and analyze website performance.
             </p>
             <p className="text-[--color-text-secondary]">
               This policy explains what these technologies are and why we use them, as well as your rights to control our use of them.

@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">1. Agreement to Terms</h2>
             <p className="text-[--color-text-secondary] mb-4">
-              Welcome to Meetaps! These Terms of Service (&quot;Terms&quot;, &quot;Agreement&quot;) govern your use of the Meetaps Technology Ltd. website located at meetaps.com (the &quot;Service&quot;) operated by Meetaps Technology Ltd. (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;).
+              Welcome to Meetaps! These Terms of Service (&quot;Terms&quot;, &quot;Agreement&quot;) govern your use of the Meetaps Media Chengdu Tech Ltd., Co website located at meetaps.com (the &quot;Service&quot;) operated by Meetaps Media Chengdu Tech Ltd., Co (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;).
             </p>
             <p className="text-[--color-text-secondary]">
               Our Terms of Service have been created with the help of the TermsFeed Terms of Service Generator.
@@ -38,8 +38,8 @@ export default function TermsOfServicePage() {
             </p>
             <ul className="list-disc pl-6 text-[--color-text-secondary] mb-4">
               <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-              <li><strong>Country</strong> refers to: Hong Kong SAR</li>
-              <li><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Meetaps Technology Ltd.</li>
+              <li><strong>Country</strong> refers to: China</li>
+              <li><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Meetaps Media Chengdu Tech Ltd., Co</li>
               <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
               <li><strong>Service</strong> refers to the Website.</li>
               <li><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</li>
@@ -66,20 +66,20 @@ export default function TermsOfServicePage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">5. Intellectual Property</h2>
             <p className="text-[--color-text-secondary] mb-4">
-              The Service and its original content (excluding Content provided by You or other users), features and functionality are and will remain the exclusive property of Meetaps Technology Ltd. and its licensors.
+              The Service and its original content (excluding Content provided by You or other users), features and functionality are and will remain the exclusive property of Meetaps Media Chengdu Tech Ltd., Co and its licensors.
             </p>
             <p className="text-[--color-text-secondary]">
-              The Service is protected by copyright, trademark, and other laws of both the Hong Kong SAR and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Meetaps Technology Ltd.
+              The Service is protected by copyright, trademark, and other laws of both China and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Meetaps Media Chengdu Tech Ltd., Co.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">6. Links to Other Websites</h2>
             <p className="text-[--color-text-secondary] mb-4">
-              Our Service may contain links to third-party web sites or services that are not owned or controlled by Meetaps Technology Ltd.
+              Our Service may contain links to third-party web sites or services that are not owned or controlled by Meetaps Media Chengdu Tech Ltd., Co.
             </p>
             <p className="text-[--color-text-secondary]">
-              Meetaps Technology Ltd. has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+              Meetaps Media Chengdu Tech Ltd., Co has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
             </p>
           </section>
 

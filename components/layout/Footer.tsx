@@ -1,8 +1,13 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
-import { Linkedin, Twitter, Github, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, ArrowRight } from 'lucide-react';
+import { useContactModal } from '@/lib/ContactModalContext';
 
 export default function Footer() {
+  const { openContactModal } = useContactModal();
+
   return (
     <footer className="bg-slate-900 text-white">
       {/* CTA Section */}
@@ -13,13 +18,13 @@ export default function Footer() {
               <h2 className="text-2xl md:text-3xl font-bold">Ready to get started?</h2>
               <p className="text-slate-400 mt-2">Let's discuss how we can help your business grow.</p>
             </div>
-            <Link 
-              href="/contact" 
+            <button
+              onClick={openContactModal}
               className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-xl transition-colors"
             >
               Contact Us
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -33,43 +38,14 @@ export default function Footer() {
               <Image
                 src="/meetaps-logo-light.png"
                 alt="MEETAPS"
-                width={140}
-                height={40}
-                className="h-8 w-auto"
+                width={180}
+                height={52}
+                className="h-10 w-auto"
               />
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
+            <p className="text-slate-400 text-sm leading-relaxed">
               Enterprise AI & Cross-Border Tech Services. We bridge China AI infrastructure with global enterprise needs.
             </p>
-            <div className="flex gap-4">
-              <a 
-                href="https://linkedin.com/company/meetaps" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a 
-                href="https://twitter.com/meetaps" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a 
-                href="https://github.com/meetaps" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
-              >
-                <Github className="w-5 h-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
-            </div>
           </div>
 
           {/* Column 2: Services */}
@@ -142,12 +118,8 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-400 text-sm">+852 1234 5678</span>
-              </li>
-              <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-400 text-sm">Hong Kong</span>
+                <span className="text-slate-400 text-sm">Chengdu, China</span>
               </li>
             </ul>
           </div>
@@ -159,7 +131,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-slate-500">
-              © {new Date().getFullYear()} Meetaps Technology Ltd. All rights reserved.
+              © {new Date().getFullYear()} Meetaps Media Chengdu Tech Ltd., Co. All rights reserved.
             </div>
             <div className="flex gap-6 text-sm">
               <Link href="/legal/privacy-policy" className="text-slate-500 hover:text-white transition-colors">

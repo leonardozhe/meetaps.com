@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
-import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle2, Globe } from 'lucide-react';
 import Link from 'next/link';
+import { useContactModal } from '@/lib/ContactModalContext';
 
 const features = [
   'Enterprise-grade AI infrastructure',
@@ -12,6 +13,8 @@ const features = [
 ];
 
 export default function Hero() {
+  const { openContactModal } = useContactModal();
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background */}
@@ -66,12 +69,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Link href="/contact">
-                <Button variant="primary" className="gap-2">
-                  Get Started
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
+              <Button variant="primary" className="gap-2" onClick={openContactModal}>
+                Get Started
+                <ArrowRight className="w-4 h-4" />
+              </Button>
               <Link href="/services">
                 <Button variant="secondary" className="gap-2">
                   <Play className="w-4 h-4" />
@@ -124,19 +125,12 @@ export default function Hero() {
               
               <div className="mt-8 pt-8 border-t border-slate-200">
                 <div className="flex items-center gap-4">
-                  <div className="flex -space-x-3">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div
-                        key={i}
-                        className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 border-2 border-white flex items-center justify-center text-white text-xs font-medium"
-                      >
-                        {String.fromCharCode(64 + i)}
-                      </div>
-                    ))}
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white">
+                    <Globe className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-slate-900">Trusted by leading enterprises</div>
-                    <div className="text-sm text-slate-500">From startups to Fortune 500</div>
+                    <div className="text-sm font-medium text-slate-900">Leading China AI Compute Export</div>
+                    <div className="text-sm text-slate-500">Bridging China's AI infrastructure to global markets</div>
                   </div>
                 </div>
               </div>
